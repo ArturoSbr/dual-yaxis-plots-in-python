@@ -33,7 +33,7 @@ def bar_line(x, y1, y2, title=None, x_label=None, y1_label=None, y2_label=None,
              y1_legend=None, y2_legend=None, y1_lim=None, y2_lim=None,
              export_figure=False, export_path=None, export_name='fig'):
     fig, ax1 = plt.subplots()
-    ax1.plot(range(len(x)), y1, color='C0', label=y1_legend)
+    ax1.bar(range(len(x)), y1, color='C0', label=y1_legend)
     ax1.set_xlabel(x_label)
     ax1.set_ylabel(y1_label)
     ax1.set_xticks(range(len(x)))
