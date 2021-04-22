@@ -15,7 +15,7 @@ def line_line(x, y1, y2, color_1='C0', color_2='C1', title=None,
     if type(y1_lim) is tuple:
         ax1.set_ylim(bottom=y1_lim[0], top=y1_lim[1])
     ax2 = ax1.twinx()
-    ax2.plot(y2, color=color_2, lw=3 label=y2_legend)
+    ax2.plot(y2, color=color_2, lw=3, label=y2_legend)
     ax2.set_ylabel(y2_label, rotation=270, labelpad=13)
     if type(y2_lim) is tuple:
         ax2.set_ylim(bottom=y2_lim[0], top=y2_lim[1])
